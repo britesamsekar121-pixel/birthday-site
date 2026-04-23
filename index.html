@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Happy Birthday 💖</title>
+  <title>Happy Birthday Nithi💖</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="overlay" id="startScreen">
+  <h1>Tap to Open 💖</h1>
+</div>
+
 <div class="container">
 
-  <div class="card">
-    <h1>Happy Birthday 🎉</h1>
-    <p class="subtitle">A little surprise just for you 💖</p>
-    <button onclick="showSurprise()">Open Your Surprise 🎁</button>
+  <div class="card main">
+    <h1>Happy Birthday Nithi🎉</h1>
+    <p class="subtitle">I made something special for you</p>
+    <button onclick="showSurprise()">Open 🎁</button>
   </div>
 
-  <div class="card hidden" id="surpriseCard">
-    <h2>💌 A Message For You</h2>
+  <div class="card hidden" id="messageCard">
+    <h2>💌 For You</h2>
     <p id="typing"></p>
   </div>
 
-  <div class="card">
-    <h2>📸 Our Memories</h2>
+  <div class="card gallery-card">
+    <h2>📸 Memories</h2>
     <div class="gallery">
       <img src="images/photo.jpeg">
       <img src="images/photo1.jpeg">
@@ -28,6 +32,8 @@
   </div>
 
 </div>
+
+<div id="hearts"></div>
 
 <audio id="music" loop>
   <source src="music.mp3" type="audio/mpeg">
