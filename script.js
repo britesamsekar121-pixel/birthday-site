@@ -24,7 +24,7 @@ window.onload = () => {
 
   window.showSurprise = function () {
     document.getElementById("surprise").innerText =
-      "You make my life brighter 💖 Happy Birthday!";
+      "You make my life brighter 💖 Happy Birthday Kutta!";
     document.getElementById("surprise").style.display = "block";
 
     confetti({
@@ -38,7 +38,7 @@ window.onload = () => {
   };
 
   // Typing effect
-  let text = "Happy Birthday! You are truly special 💖";
+  let text = "Happy Birthday Kutta! You are truly special 💖";
   let i = 0;
 
   function typeEffect() {
