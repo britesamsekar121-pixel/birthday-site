@@ -12,36 +12,28 @@
 
 <div class="container">
 
-  <div class="card main">
-    <h1>Happy Birthday Nithi🎉</h1>
-    <p class="subtitle">I made something special for you</p>
-    <button onclick="showSurprise()">Open 🎁</button>
+  <div class="card">
+    <h1>Happy Birthday Nithi 🎉</h1>
+    <p>I made something special for you</p>
+    <button>Open 🎁</button>
   </div>
 
-<div class="card gallery-card">
+  <div class="card">
     <h2>📸 Memories</h2>
     <div class="gallery">
       <img src="images/photo.jpeg">
       <img src="images/photo1.jpeg">
     </div>
-    <div class="card">
-
-  <div class="card hidden" id="messageCard">
-    <h2>💌 For You</h2>
-    <p id="typing"></p>
   </div>
 
-
-  <h2>📮 Send a Secret Message</h2>
-
-  <button onclick="showLetter()">Send 💌</button>
-
-  <div id="letter" class="letter hidden"></div>
-</div>
+  <!-- 👇 THIS MUST BE OUTSIDE -->
+  <div class="card">
+    <h2>💌 A Letter For You</h2>
+    <button onclick="showLetter()">Open 💖</button>
+    <div id="letter" class="letter hidden"></div>
   </div>
 
 </div>
-
 <div id="hearts"></div>
 
 <audio id="music" loop>
