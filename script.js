@@ -83,3 +83,15 @@ intha birthday la irunthaachi ne ethuku eduthaalum kanla thanni varathu and chin
 
   letter.classList.remove("hidden");
 }
+
+function openGift() {
+  const memories = document.querySelector(".gallery");
+
+  memories.scrollIntoView({ behavior: "smooth" });
+
+  // small animation
+  memories.style.transform = "scale(1.05)";
+  setTimeout(() => {
+    memories.style.transform = "scale(1)";
+  }, 300);
+}
