@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="startScreen">
+  <h2>Tap to Start 💖</h2>
+</div>
+<h1>Happy Birthday 🎉</h1>
+
+<button onclick="showMessage()">Click for Surprise 🎁</button>
+<p id="message"></p>
+
+<h2>A Message For You 💌</h2>
+<p>
+You are one of the most amazing people I know.
+Thank you for being in my life 💖
+</p>
+
+<h2>Our Memories 📸</h2>
+<div class="gallery">
+  <img src="images/photo.jpeg">
+  <img src="images/photo1.jpeg">
+</div>
+
+<button onclick="playMusic()">Play Music 🎵</button>
+
+<audio id="music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="showSurprise()">Open Your Surprise 🎁</button>
+
+<p id="surprise" style="display:none;"></p>
+<p id="typing"></p>
+
+<div id="balloons"></div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>
