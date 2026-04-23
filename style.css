@@ -25,16 +25,20 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 30px;
-  gap: 25px;
+  gap: 30px;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
 }
 
 /* Glass Card */
 .card {
+  position: relative;
   backdrop-filter: blur(15px);
   background: rgba(255,255,255,0.2);
   border-radius: 20px;
   padding: 25px;
-  width: 320px;
+  width: 100%;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   color: white;
@@ -106,13 +110,6 @@ button:hover {
   100% { transform: translateY(-100vh); opacity: 0; }
 }
 
-/* Fix mobile width issues */
-.container {
-  width: 100%;
-  max-width: 400px;
-  margin: auto;
-}
-
 /* Textarea */
 textarea {
   width: 100%;
@@ -124,34 +121,6 @@ textarea {
   font-family: inherit;
   margin-top: 10px;
 }
-
-/* Letter reveal */
-.letter {
-  margin-top: 15px;
-  padding: 15px;
-  border-radius: 15px;
-  background: white;
-  color: #ff4d6d;
-  animation: fadeIn 0.5s ease;
-}
-
-/* Animation */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* 🔥 MOBILE RESPONSIVE FIX */
-@media (max-width: 500px) {
-  .card {
-    width: 90%;
-    padding: 20px;
-  }
-
-  .gallery img {
-    width: 100px;
-  }
-}
 .letter {
   margin-top: 15px;
   padding: 20px;
@@ -161,4 +130,21 @@ textarea {
   text-align: left;
   line-height: 1.6;
   font-size: 15px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+@media (max-width: 500px) {
+  .card {
+    width: 90%;
+  }
+
+  .gallery img {
+    width: 100px;
+  }
 }
