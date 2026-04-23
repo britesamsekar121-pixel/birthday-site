@@ -43,3 +43,16 @@ function createHearts() {
     container.appendChild(heart);
   }
 }
+
+function showLetter() {
+  const msg = document.getElementById("userMessage").value;
+  const letter = document.getElementById("letter");
+
+  if (msg.trim() === "") {
+    letter.innerText = "Write something first 💌";
+  } else {
+    letter.innerText = msg;
+  }
+
+  letter.classList.remove("hidden");
+}
