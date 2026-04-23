@@ -18,17 +18,28 @@
     <button onclick="showSurprise()">Open 🎁</button>
   </div>
 
-  <div class="card hidden" id="messageCard">
-    <h2>💌 For You</h2>
-    <p id="typing"></p>
-  </div>
-
-  <div class="card gallery-card">
+<div class="card gallery-card">
     <h2>📸 Memories</h2>
     <div class="gallery">
       <img src="images/photo.jpeg">
       <img src="images/photo1.jpeg">
     </div>
+    <div class="card">
+
+  <div class="card hidden" id="messageCard">
+    <h2>💌 For You</h2>
+    <p id="typing"></p>
+  </div>
+
+
+  <h2>📮 Send a Secret Message</h2>
+
+  <textarea id="userMessage" placeholder="Type something sweet... 💖"></textarea>
+
+  <button onclick="showLetter()">Send 💌</button>
+
+  <div id="letter" class="letter hidden"></div>
+</div>
   </div>
 
 </div>
