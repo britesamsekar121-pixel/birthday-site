@@ -32,7 +32,7 @@ function typeEffect() {
 function createHearts() {
   const container = document.getElementById("hearts");
 
-  for (let i = 0; i < 25; i++) {
+  for (let i = 0; i < 20; i++) {
     let heart = document.createElement("div");
     heart.classList.add("heart");
     heart.innerHTML = "💖";
@@ -78,7 +78,7 @@ intha birthday la irunthaachi ne ethuku eduthaalum kanla thanni varathu and chin
   I hope today brings you as much joy as you bring to everyone around you.
   You truly deserve all the happiness in the world 🌸<br><br>
 
-  Once again, Happy Birthday 🎉
+  Once again, Happy Birthday Kuttachi 🎉
   `;
 
   letter.classList.remove("hidden");
