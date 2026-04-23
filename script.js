@@ -38,6 +38,7 @@ function createHearts() {
     heart.innerHTML = "💖";
 
     heart.style.left = Math.random() * 100 + "%";
+    heart.style.bottom = "-50px"; 
     heart.style.animationDuration = (3 + Math.random() * 3) + "s";
 
     container.appendChild(heart);
