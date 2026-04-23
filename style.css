@@ -33,6 +33,7 @@ button:hover {
 .gallery img {
   width: 200px;
   border-radius: 15px;
+  transform: rotate(90deg);
 }
 /* Start screen */
 #startScreen {
