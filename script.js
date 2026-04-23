@@ -37,8 +37,13 @@ function createHearts() {
     heart.classList.add("heart");
     heart.innerHTML = "💖";
 
+    // RANDOM horizontal
     heart.style.left = Math.random() * 100 + "%";
-    heart.style.bottom = "-50px"; 
+
+    // 🔥 THIS IS THE FIX
+    heart.style.top = "100vh";  // start from bottom of screen
+
+    // animation timing
     heart.style.animationDuration = (3 + Math.random() * 3) + "s";
 
     container.appendChild(heart);
