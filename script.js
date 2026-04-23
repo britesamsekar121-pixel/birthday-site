@@ -94,4 +94,6 @@ function openGift() {
   setTimeout(() => {
     memories.style.transform = "scale(1)";
   }, 300);
+
+  createHearts();
 }
